@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
 
 /*
 =============== 
@@ -634,13 +634,12 @@ Projects
 }
 .project {
   display: grid;
-  row-gap: 2rem;
   margin-bottom: 4rem;
 }
 .project-img {
-  border-radius: var(--radius);
-  height: 15rem;
-  box-shadow: var(--dark-shadow);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  height: 19rem;
   z-index: 1;
 }
 .project-img::after {
@@ -660,8 +659,8 @@ Projects
 .project-info {
   background: var(--clr-white);
   padding: 1rem 2rem;
-  border-radius: var(--radius);
-  box-shadow: var(--dark-shadow);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 .project-number {
   display: inline-block;
@@ -705,6 +704,16 @@ Projects
 .project-icon:hover {
   color: var(--clr-primary-1);
 }
+@media screen and (min-width: 576px) {
+  .project-img {
+    height: 19rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-img {
+    height: 22rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .project {
     grid-template-columns: repeat(12, 1fr);
@@ -715,8 +724,13 @@ Projects
     /* grid-column-end: 8; */
     grid-row: 1 / 1;
     height: 30rem;
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
   }
   .project-info {
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
+
     z-index: 1;
     grid-column: 5 /12;
     grid-row: 1 / 1;
