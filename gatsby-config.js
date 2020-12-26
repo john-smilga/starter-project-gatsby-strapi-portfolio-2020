@@ -38,17 +38,17 @@ module.exports = {
       },
     },
     // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   resolve: `gatsby-plugin-webfonts`,
     //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Roboto`,
-    //         variants: [`400`, `700`],
-    //       },
-    //       {
-    //         family: `Open Sans`,
-    //       },
-    //     ],
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: "Roboto",
+    //           variants: ["400", "700"],
+    //         },
+    //         { family: "Open Sans" },
+    //       ],
+    //     },
     //   },
     // },
   ],
