@@ -5,7 +5,7 @@
 3. Limit amount of components - better overview
 4. React Icons
 
-[react icons] :https://react-icons.github.io/react-icons/
+[react icons] https://react-icons.github.io/react-icons/
 
 ```javascript
 import { FaHome } from "react-icons/fa"
